@@ -1,0 +1,136 @@
+* {
+    background-color:hsl(30, 38%, 92%);
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 1440px;
+    display: flex;
+}
+
+.image-product-desktop {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px ;
+}
+
+.image-product-mobile {
+    visibility: hidden;
+    position: absolute;
+}
+
+.Box-white {
+    max-width: 250px;
+    padding: 36.8px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    background-color: white;
+    max-width: 90%;
+}
+
+.Box-white-inside h1 {
+    font-family: 'Fraunces', serif;
+    background-color: white;
+    color: hsl(158, 36%, 37%);
+}
+
+p {
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: rgb(167, 161, 161);
+    font-size: 0.875rem;
+}
+
+.Box-white-inside {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+del {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: rgb(167, 161, 161);
+    font-size: 0.875rem;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px 10px;
+    border-style: none;
+    cursor: pointer;
+    transition:.3s ease;
+}
+
+button img {
+    background-color: hsl(158, 36%, 37%);
+    padding-right: 1rem;
+}
+
+button:hover, img:hover {
+    background-color: hsl(158, 36%, 30%)
+}
+
+@media screen and (max-width: 375px){
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-product-desktop {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .image-product-mobile {
+        visibility: visible;
+        max-width: 320px;
+        max-height: 300px;
+        position: relative;
+        border-radius: 10px 10px 0 0 ;
+        
+    }
+
+    .Box-white {
+        max-width: 246.5px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 375px){
+    .Box-white {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
